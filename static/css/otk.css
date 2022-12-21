@@ -1,0 +1,84 @@
+:root {
+    --otk-red: #f53240;
+    --otk-black: #041014;
+    --otk-nightblue: #11272e;
+}
+
+.navsection {
+    background-color: var(--otk-nightblue);
+    align-items: center !important;
+}
+
+.navbar {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 32px;
+    z-index: 7;
+    padding-left: 2rem;
+}
+
+.nav-links a {
+    color: #cc0000;
+    text-decoration: none;
+    padding: 5px 14px;
+}
+
+.menu {
+    font-size: 18px;
+}
+
+.menu li:hover>a {
+    transition: 0.3s ease;
+    z-index: 6;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+
+@media (max-width: 992px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #041014;
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #11272e;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
