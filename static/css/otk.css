@@ -1,11 +1,13 @@
 :root {
     --otk-red: #f53240;
-    --otk-black: #041014;
+    --otk-black: #000;
     --otk-nightblue: #11272e;
+    --otk-white: #fff;
+    --otk-green:#2C5C3C;
 }
 
 .navsection {
-    background-color: var(--otk-nightblue);
+    background-color: var(--otk-black);
     align-items: center !important;
 }
 
@@ -15,19 +17,21 @@
 }
 
 .logo {
-    font-size: 32px;
+    font-size: 34px;
     z-index: 7;
-    padding-left: 2rem;
+    padding-left: 0;
 }
 
 .nav-links a {
-    color: #cc0000;
+    color: var(--otk-white);
     text-decoration: none;
-    padding: 5px 14px;
+    padding: 10px 28px;
 }
-
+.nav-links a:hover {
+    color: var(--otk-green);
+}
 .menu {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .menu li:hover>a {
@@ -50,7 +54,7 @@
     .menu {
         display: none;
         position: absolute;
-        background-color: #041014;
+        background-color: var(--otk-black);
         right: 0;
         left: 0;
         text-align: center;
